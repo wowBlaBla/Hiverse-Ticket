@@ -1,5 +1,6 @@
 import { BrowserRouter } from 'react-router-dom';
 import Header from './components/Header/Header'
+import Footer from './components/Footer/Footer'
 import HomeScreen from './components/HomeScreen/HomeScreen'
 import Vision from './components/Vision/Vision'
 import Collection from './components/Collection/Collection'
@@ -23,6 +24,7 @@ function App() {
             <Roadmap></Roadmap>
             <Team></Team>
           </div>
+          <Footer />
         </BrowserRouter>
       </ParallaxProvider>
     </>

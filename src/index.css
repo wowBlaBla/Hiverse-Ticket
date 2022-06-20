@@ -109,6 +109,7 @@ section {
 }
 #team img {
   width: 100%;
+  aspect-ratio: 1;
 }
 .react-multi-carousel-item {
   padding: 20px;
@@ -129,4 +130,7 @@ section {
 }
 .item {
   padding: 20px;
+}
+#footer a {
+  color: white;
 }
