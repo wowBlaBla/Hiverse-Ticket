@@ -2,9 +2,15 @@ import React from "react";
 import GlitchText from 'react-glitch-effect/core/GlitchText';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import team0 from "../../assets/team0.jpg"
 import team1 from "../../assets/team4.jpg"
 import team2 from "../../assets/team2.jpg"
 import team3 from "../../assets/team3.jpg"
+import {
+    FaInstagram,
+    FaTwitter,
+    FaDiscord,
+} from "react-icons/fa";
 
 export default function Team() {
     const responsive = {
@@ -36,24 +42,70 @@ export default function Team() {
     return (
         <section id="team">
             <div className="fs-1">
-                <GlitchText duration="5000" color2="#00FFFF" color1="red">
+                <GlitchText duration={5000} color2="#00FFFF" color1="red">
                     ABOUT US
                 </GlitchText>
             </div>
-            <Carousel responsive={responsive}  infinite={true}>
-                <div>
-                    <img src={team1} alt="" />
-                    <p className="legend">Legend 1</p>
-                </div>
-                <div>
-                    <img src={team3} alt="" />
-                    <p className="legend">Legend 3</p>
-                </div>
-                <div>
-                    <img src={team2} alt="" />
-                    <p className="legend">Legend 2</p>
-                </div>
-            </Carousel>
+            <div className="carousel">
+                <Carousel responsive={responsive} infinite={true}>
+                    <div className="item">
+                        <img src={team0} alt="" className="img-thumbnail" />
+                        <div className="fs-3 ">BOB GREENFIELD</div>
+                        <div>programming guru</div>
+                        <a href="/" className={"px-2 py-2 rounded-md text-base font-medium "}>
+                            <FaInstagram />
+                        </a>
+                        <a href="/" className={"px-2 py-2 rounded-md text-base font-medium "}>
+                            <FaTwitter />
+                        </a>
+                        <a href="/" className={"px-2 py-2 rounded-md text-base font-medium "}>
+                            <FaDiscord />
+                        </a>
+                    </div>
+                    <div className="item">
+                        <img src={team1} alt="" className="img-thumbnail" />
+                        <div className="fs-3 ">BOB GREENFIELD</div>
+                        <div>programming guru</div>
+                        <a href="/" className={"px-2 py-2 rounded-md text-base font-medium "}>
+                            <FaInstagram />
+                        </a>
+                        <a href="/" className={"px-2 py-2 rounded-md text-base font-medium "}>
+                            <FaTwitter />
+                        </a>
+                        <a href="/" className={"px-2 py-2 rounded-md text-base font-medium "}>
+                            <FaDiscord />
+                        </a>
+                    </div>
+                    <div className="item">
+                        <img src={team3} alt="" className="img-thumbnail" />
+                        <div className="fs-3 ">ANN RICHMOND</div>
+                        <div>sales manager</div>
+                        <a href="/" className={"px-2 py-2 rounded-md text-base font-medium "}>
+                            <FaInstagram />
+                        </a>
+                        <a href="/" className={"px-2 py-2 rounded-md text-base font-medium "}>
+                            <FaTwitter />
+                        </a>
+                        <a href="/" className={"px-2 py-2 rounded-md text-base font-medium "}>
+                            <FaDiscord />
+                        </a>
+                    </div>
+                    <div className="item">
+                        <img src={team2} alt="" className="img-thumbnail" />
+                        <div className="fs-3 ">BOB GREENFIELD</div>
+                        <div>programming guru</div>
+                        <a href="/" className={"px-2 py-2 rounded-md text-base font-medium "}>
+                            <FaInstagram />
+                        </a>
+                        <a href="/" className={"px-2 py-2 rounded-md text-base font-medium "}>
+                            <FaTwitter />
+                        </a>
+                        <a href="/" className={"px-2 py-2 rounded-md text-base font-medium "}>
+                            <FaDiscord />
+                        </a>
+                    </div>
+                </Carousel>
+            </div>
         </section>
     );
 }
