@@ -35,7 +35,7 @@ export default function Roadmap() {
     return (
         <section id="roadmap">
             <div className="fs-1" ref={parallax.ref}>
-                <GlitchText duration="5000" color2="#00FFFF" color1="red">
+                <GlitchText duration={5000} color2="#00FFFF" color1="red">
                     THE ROADMAP
                 </GlitchText>
             </div>
@@ -43,7 +43,7 @@ export default function Roadmap() {
                 <div>
                     <div className="d-flex mt-5 mb-5 align-items-center gap-2" ref={parallax1.ref}>
                         <div className="number">
-                            <GlitchText duration="5000" color2="#00FFFF" color1="red">
+                            <GlitchText duration={5000} color2="#00FFFF" color1="red">
                                 01
                             </GlitchText>
                         </div>
@@ -61,7 +61,7 @@ export default function Roadmap() {
                     </div>
                     <div className="d-flex mt-5 mb-5 align-items-center gap-2" ref={parallax2.ref}>
                         <div className="number">
-                            <GlitchText duration="5000" color2="#00FFFF" color1="red">
+                            <GlitchText duration={5000} color2="#00FFFF" color1="red">
                                 02
                             </GlitchText>
                         </div>
@@ -78,7 +78,7 @@ export default function Roadmap() {
                     </div>
                     <div className="d-flex mt-5 mb-5 align-items-center gap-2" ref={parallax3.ref}>
                         <div className="number">
-                            <GlitchText duration="5000" color2="#00FFFF" color1="red">
+                            <GlitchText duration={5000} color2="#00FFFF" color1="red">
                                 03
                             </GlitchText>
                         </div>
@@ -95,7 +95,7 @@ export default function Roadmap() {
                     </div>
                     <div className="d-flex mt-5 mb-5 align-items-center gap-2" ref={parallax4.ref}>
                         <div className="number">
-                            <GlitchText duration="5000" color2="#00FFFF" color1="red">
+                            <GlitchText duration={5000} color2="#00FFFF" color1="red">
                                 04
                             </GlitchText>
                         </div>
@@ -112,7 +112,7 @@ export default function Roadmap() {
                     </div>
                     <div className="d-flex mt-5 mb-5 align-items-center gap-2" ref={parallax5.ref}>
                         <div className="number">
-                            <GlitchText duration="5000" color2="#00FFFF" color1="red">
+                            <GlitchText duration={5000} color2="#00FFFF" color1="red">
                                 05
                             </GlitchText>
                         </div>
@@ -129,7 +129,7 @@ export default function Roadmap() {
                     </div>
                     <div className="d-flex mt-5 mb-5 align-items-center gap-2" ref={parallax6.ref}>
                         <div className="number">
-                            <GlitchText duration="5000" color2="#00FFFF" color1="red">
+                            <GlitchText duration={5000} color2="#00FFFF" color1="red">
                                 06
                             </GlitchText>
                         </div>
@@ -147,7 +147,7 @@ export default function Roadmap() {
                     </div>
                     <div className="d-flex mt-5 mb-5 align-items-center gap-2" ref={parallax7.ref}>
                         <div className="number">
-                            <GlitchText duration="5000" color2="#00FFFF" color1="red">
+                            <GlitchText duration={5000} color2="#00FFFF" color1="red">
                                 07
                             </GlitchText>
                         </div>

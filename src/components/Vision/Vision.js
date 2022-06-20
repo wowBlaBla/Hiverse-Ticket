@@ -9,7 +9,7 @@ export default function Vision() {
     return (
         <section id="vision">
             <div className="vision-title">
-                <GlitchText duration="5000" color2="#00FFFF" color1="red">
+                <GlitchText duration={5000} color2="#00FFFF" color1="red">
                     THE VISION
                 </GlitchText>
             </div>

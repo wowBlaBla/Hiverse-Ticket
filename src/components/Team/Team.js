@@ -36,7 +36,7 @@ export default function Team() {
     return (
         <section id="team">
             <div className="fs-1">
-                <GlitchText duration="5000" color2="#00FFFF" color1="red">
+                <GlitchText duration={5000} color2="#00FFFF" color1="red">
                     ABOUT US
                 </GlitchText>
             </div>

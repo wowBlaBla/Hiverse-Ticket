@@ -18,7 +18,7 @@ export default function Benifit() {
                 <div className="mt-5 mb-5" style={{ flex: 1 }}>
                     <div className="benefits-title1">
                         TICKETS HOLDERS&nbsp;
-                        <GlitchText duration="5000" color2="#00FFFF" color1="red">
+                        <GlitchText duration={5000} color2="#00FFFF" color1="red">
                             BENEFITS
                         </GlitchText>
                     </div>

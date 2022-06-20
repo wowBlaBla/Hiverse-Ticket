@@ -11,7 +11,7 @@ export default function HomeScreen() {
                 <ReactPlayer playing={true} muted={true} loop={true} className='react-player' url={Ticket_Normal} />
                 <div className="mt-5 mb-5" style={{ flex: 1.3 }}>
                     <div className="home-title1">
-                            When Web3 <GlitchText duration="5000" color2="#00FFFF" color1="red">
+                            When Web3 <GlitchText duration={5000} color2="#00FFFF" color1="red">
                             meets
                         </GlitchText> Cinema
 
