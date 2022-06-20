@@ -40,20 +40,25 @@ export default function Team() {
                     ABOUT US
                 </GlitchText>
             </div>
-            <Carousel responsive={responsive}  infinite={true}>
-                <div>
-                    <img src={team1} alt="" />
-                    <p className="legend">Legend 1</p>
-                </div>
-                <div>
-                    <img src={team3} alt="" />
-                    <p className="legend">Legend 3</p>
-                </div>
-                <div>
-                    <img src={team2} alt="" />
-                    <p className="legend">Legend 2</p>
-                </div>
-            </Carousel>
+            <div className="carousel">
+                <Carousel responsive={responsive} infinite={true}>
+                    <div className="item">
+                        <img src={team1} alt="" className="img-thumbnail" />
+                        <div className="fs-3 ">BOB GREENFIELD</div>
+                        <div>programming guru</div>
+                    </div>
+                    <div className="item">
+                        <img src={team3} alt="" className="img-thumbnail" />
+                        <div className="fs-3 ">ANN RICHMOND</div>
+                        <div>sales manager</div>
+                    </div>
+                    <div className="item">
+                        <img src={team2} alt="" className="img-thumbnail" />
+                        <div className="fs-3 ">BOB GREENFIELD</div>
+                        <div>programming guru</div>
+                    </div>
+                </Carousel>
+            </div>
         </section>
     );
 }

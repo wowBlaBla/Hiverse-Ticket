@@ -112,13 +112,21 @@ section {
 }
 .react-multi-carousel-item {
   padding: 20px;
+  text-align: center;
+}
+.carousel {
+  background-color: #1a1a1a;
+  border-radius: 5px;
 }
 
 @media (max-width: 576px) {
   .react-player {
     max-width: 350px;
   }
-  .collection-title1{
+  .collection-title1 {
     font-size: 3rem;
   }
+}
+.item {
+  padding: 20px;
 }
