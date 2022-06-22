@@ -2,7 +2,7 @@ import React from "react";
 import ReactPlayer from 'react-player';
 import GlitchText from 'react-glitch-effect/core/GlitchText';
 import LazyLoad from 'react-lazyload';
-import Ticket_Normal from "../../assets/Ticket_Normal.mp4";
+import Ticket_Normal from "../../assets/Ticket_Normal.mov";
 import check from "../../assets/check.png"
 export default function Benifit() {
 
@@ -13,7 +13,7 @@ export default function Benifit() {
                     <LazyLoad height={500}>
                         <ReactPlayer playing={true} muted={true} loop={true} className='react-player' url={Ticket_Normal} />
                     </LazyLoad>
-                    <div className="link-class">JOIN DISCORD</div>
+                    <div className="link-class"><span>JOIN DISCORD</span></div>
                 </div>
                 <div className="mt-5 mb-5" style={{ flex: 1 }}>
                     <div className="benefits-title1">
@@ -22,7 +22,7 @@ export default function Benifit() {
                             BENEFITS
                         </GlitchText>
                     </div>
-                    <div className="benefits-title2">Join the Family & enjoy exclusive advantages</div>
+                    <div className="benefits-title2 mt-4 mb-4">Join the Family & enjoy exclusive advantages</div>
                     <div className="benefits-title3 fs-2">
                         <p><img src={check} alt="" width={40}></img>&nbsp;&nbsp;1xFREE CLAIM on all HIVERSE NFT Collections.</p>
                         <p><img src={check} alt="" width={40}></img>&nbsp;&nbsp;Guaranteed presale spot on all HIVERSE NFT Collections.</p>

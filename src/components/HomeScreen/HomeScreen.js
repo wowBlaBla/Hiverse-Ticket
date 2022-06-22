@@ -1,7 +1,7 @@
 import React from "react";
 import ReactPlayer from 'react-player';
 import GlitchText from 'react-glitch-effect/core/GlitchText';
-import Ticket_Normal from "../../assets/Ticket_Normal.mp4";
+import Ticket_Normal from "../../assets/Ticket_Normal.mov";
 
 export default function HomeScreen() {
     const mintHandle = () => {
@@ -21,7 +21,9 @@ export default function HomeScreen() {
                     <div className="home-title2">Join the Revolution</div>
                     <div className="home-title3">LAUNCH DATE TBA</div>
                     <div className="home-mint">
-                        <span onClick={mintHandle} style={{ cursor: "pointer" }}><span style={{ color: "#00FFFF" }}>FREE</span> <span style={{ color: "red" }}>MINT</span></span>
+                        <span onClick={mintHandle} style={{ cursor: "pointer" }}><span style={{ color: "#00FFFF" }}>FREE</span> <span style={{ color: "red" }}><GlitchText duration={5000} color2="#00FFFF" color1="red">
+                            MINT
+                        </GlitchText></span></span>
                     </div>
                 </div>
             </div>

@@ -9,9 +9,17 @@
     url(/src/assets/font/MYRIADPRO-REGULAR.OTF) format("truetype");
 }
 @font-face {
+  font-family: "impact";
+  src: local("impact"), url(/src/assets/font/impact.ttf) format("truetype");
+}
+@font-face {
   font-family: "Myriad Pro Bold";
   src: local("Myriad Pro Regular"),
     url(/src/assets/font/MYRIADPRO-SEMIBOLD.OTF) format("truetype");
+}
+@font-face {
+  font-family: "futur";
+  src: local("futur"), url(/src/assets/font/futur.ttf) format("truetype");
 }
 body {
   margin: 0;
@@ -25,12 +33,63 @@ section {
 }
 .link-class {
   font-size: 3rem;
-  font-family: "Myriad Pro Bold";
+  font-family: impact;
+}
+.link-class span {
+  background-color: white;
+  padding: 0.2rem 2rem;
+  border-radius: 2rem;
+  font-weight: 900;
+  cursor: pointer;
+  color: black;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  animation: move linear 2000ms infinite;
+}
+
+
+
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 hsla(0, 100%, 50%, 1),
+      3px -3px 0 hsla(0, 100%, 50%, 1), 2px -2px 0 hsla(0, 100%, 50%, 1),
+      1px -1px 0 hsla(0, 100%, 50%, 1), -4px 4px 0 hsla(180, 100%, 50%, 1),
+      -3px 3px 0 hsla(180, 100%, 50%, 1), -2px 2px 0 hsla(180, 100%, 50%, 1),
+      -1px 1px 0 hsla(180, 100%, 50%, 1);
+  }
+  25% {
+    text-shadow: -4px -4px 0 hsla(180, 100%, 50%, 1),
+      -3px -3px 0 hsla(180, 100%, 50%, 1), -2px -2px 0 hsla(180, 100%, 50%, 1),
+      -1px -1px 0 hsla(180, 100%, 50%, 1), 4px 4px 0 hsla(0, 100%, 50%, 1),
+      3px 3px 0 hsla(0, 100%, 50%, 1), 2px 2px 0 hsla(0, 100%, 50%, 1),
+      1px 1px 0 hsla(0, 100%, 50%, 1);
+  }
+  50% {
+    text-shadow: -4px 4px 0 hsla(0, 100%, 50%, 1),
+      -3px 3px 0 hsla(0, 100%, 50%, 1), -2px 2px 0 hsla(0, 100%, 50%, 1),
+      -1px 1px 0 hsla(0, 100%, 50%, 1), 4px -4px 0 hsla(180, 100%, 50%, 1),
+      3px -3px 0 hsla(180, 100%, 50%, 1), 2px -2px 0 hsla(180, 100%, 50%, 1),
+      1px -1px 0 hsla(180, 100%, 50%, 1);
+  }
+  75% {
+    text-shadow: 4px 4px 0 hsla(180, 100%, 50%, 1),
+      3px 3px 0 hsla(180, 100%, 50%, 1), 2px 2px 0 hsla(180, 100%, 50%, 1),
+      1px 1px 0 hsla(180, 100%, 50%, 1), -4px -4px 0 hsla(0, 100%, 50%, 1),
+      -3px -3px 0 hsla(0, 100%, 50%, 1), -2px -2px 0 hsla(0, 100%, 50%, 1),
+      -1px -1px 0 hsla(0, 100%, 50%, 1);
+  }
+  100% {
+    text-shadow: 4px -4px 0 hsla(0, 100%, 50%, 1),
+      3px -3px 0 hsla(0, 100%, 50%, 1), 2px -2px 0 hsla(0, 100%, 50%, 1),
+      1px -1px 0 hsla(0, 100%, 50%, 1), -4px 4px 0 hsla(180, 100%, 50%, 1),
+      -3px 3px 0 hsla(180, 100%, 50%, 1), -2px 2px 0 hsla(180, 100%, 50%, 1),
+      -1px 1px 0 hsla(180, 100%, 50%, 1);
+  }
 }
 .home-title1 {
   font-size: 6rem;
   font-family: "Myriad Pro Bold";
   line-height: 1.3;
+  font-family: impact;
 }
 .home-title1 div {
   display: inline-block;
@@ -46,13 +105,15 @@ section {
   /* line-height: 2; */
 }
 .home-mint {
-  font-size: 3.8rem;
+  font-size: 6rem;
   font-family: "Myriad Pro Bold";
+}
+.home-mint div {
+  display: inline-block;
 }
 .video-title {
   font-size: 2rem;
   line-height: 1;
-  margin-top: -4rem;
 }
 
 .collection-title1 {
@@ -79,6 +140,10 @@ section {
 .benefits-title3 {
   font-size: 3rem;
 }
+.benefits-title3 p {
+  display: flex;
+  align-items: center;
+}
 .vision-title {
   font-size: 4em;
 }
@@ -87,6 +152,9 @@ section {
   background-image: url("./assets/film.png");
   background-repeat: repeat-y;
   background-size: 100px;
+}
+.roadmapp-title {
+  font-size: 4rem;
 }
 .number {
   padding: 20px;
@@ -106,6 +174,7 @@ section {
 .roadmap-title3 {
   font-size: 1.5rem;
   flex: 4;
+  font-family: futur;
 }
 #team img {
   width: 100%;
@@ -133,4 +202,7 @@ section {
 }
 #footer a {
   color: white;
+}
+#vision .content {
+  font-family: futur;
 }

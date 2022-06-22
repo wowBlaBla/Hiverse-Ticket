@@ -14,8 +14,8 @@ export default function Collection() {
                 <div className="collection-title1"><GlitchText duration={5000} color2="#00FFFF" color1="red">
                     HIVERSE TICKETS
                 </GlitchText> GENESIS COLLECTION</div>
-                <div className="collection-title2">A 3D collection of 30XX Tickets giving memebership access</div><div className="collection-title2"> to HIVERSE and exclusive benefits.</div>
-                <div className="link-class">JOIN DISCORD</div>
+                <div className="collection-title2">A 3D collection of 30XX Tickets giving membership access</div><div className="collection-title2"> to HIVERSE and exclusive benefits.</div>
+                <div className="link-class"><span>JOIN DISCORD</span></div>
             </div>
             <div className="row">
                 <div className="col-md-3">
