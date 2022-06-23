@@ -62,10 +62,10 @@ export default function Header() {
 
     return (
         <header className="Header align-items-center fixed-top">
-            <Link to="home"
+            <a href="/"
                 spy={true}
                 smooth={true}
-                duration={50}><img src={require("../../assets/logo.png")} className="Logo" alt="logo" /></Link>
+                duration={50}><img src={require("../../assets/logo.png")} className="Logo" alt="logo" /></a>
             <CSSTransition
                 in={!isSmallScreen || isNavVisible}
                 timeout={350}

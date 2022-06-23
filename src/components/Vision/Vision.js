@@ -1,7 +1,7 @@
 import React from "react";
 import ReactPlayer from 'react-player';
 import GlitchText from 'react-glitch-effect/core/GlitchText';
-import Ticket_Normal from "../../assets/Ticket_Normal.mov";
+import Ticket_Normal from "../../assets/Ticket_Normal.m4v";
 import LazyLoad from 'react-lazyload';
 
 export default function Vision() {

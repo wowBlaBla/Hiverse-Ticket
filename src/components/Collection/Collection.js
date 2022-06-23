@@ -2,10 +2,10 @@ import React from "react";
 import ReactPlayer from 'react-player';
 import LazyLoad from 'react-lazyload';
 import GlitchText from 'react-glitch-effect/core/GlitchText';
-import Ticket_Normal from "../../assets/Ticket_Normal.mp4";
-import Ticket_Premiere from "../../assets/Ticket_Premiere.mp4";
-import Ticket_Avant from "../../assets/Ticket_Avant-Premiere.mp4";
-import Ticket_Coulisses from "../../assets/Ticket_Coulisses.mp4";
+import Ticket_Normal from "../../assets/Ticket_Normal.m4v";
+import Ticket_Premiere from "../../assets/Ticket_Premiere.m4v";
+import Ticket_Avant from "../../assets/Ticket_Avant-premiere.m4v";
+import Ticket_Coulisses from "../../assets/Ticket_Coulisses.m4v";
 export default function Collection() {
 
     return (
@@ -23,7 +23,7 @@ export default function Collection() {
                         <ReactPlayer style={{ maxWidth: "100%" }} playing={true} muted={true} loop={true} className='react-player' url={Ticket_Normal} />
                     </LazyLoad>
                     <div className="text-center video-title">
-                        <div className="fw-bold">1500</div>
+                        <div className="ticket-number">1500</div>
                         <div>TICKET NORMAL</div>
                     </div>
                 </div>
@@ -32,7 +32,7 @@ export default function Collection() {
                         <ReactPlayer style={{ maxWidth: "100%" }} playing={true} muted={true} loop={true} className='react-player' url={Ticket_Premiere} />
                     </LazyLoad>
                     <div className="text-center video-title">
-                        <div className="fw-bold">1000</div>
+                        <div className="ticket-number">1000</div>
                         <div>TICKET PREMIERE</div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@ export default function Collection() {
                         <ReactPlayer style={{ maxWidth: "100%" }} playing={true} muted={true} loop={true} className='react-player' url={Ticket_Avant} />
                     </LazyLoad>
                     <div className="text-center video-title">
-                        <div className="fw-bold">1500</div>
+                        <div className="ticket-number">1500</div>
                         <div>TICKET AVANT-PREMIERE</div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@ export default function Collection() {
                         <ReactPlayer style={{ maxWidth: "100%" }} playing={true} muted={true} loop={true} className='react-player' url={Ticket_Coulisses} />
                     </LazyLoad>
                     <div className="text-center video-title">
-                        <div className="fw-bold">TBA</div>
+                        <div className="ticket-number">TBA</div>
                         <div>TICKET COULISSES</div>
                     </div>
                 </div>

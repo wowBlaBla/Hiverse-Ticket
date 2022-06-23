@@ -56,7 +56,7 @@ export default function Roadmap() {
                             </div>
                             <div className="roadmap-title3">
                                 <div className="">A disruptive concept without proper execution & excellent support is just a good idea.</div>
-                                <div className="">Community is the cornerstone of this adventure; the paramount element f its success & sustainability.</div>
+                                <div className="">Community is the cornerstone of this adventure; the paramount element of its success & sustainability.</div>
                                 <div>This is why we strive for making HIVERSE a family where everyone feels a part of it and has a role to play.</div>
                             </div>
                         </div>
@@ -76,7 +76,7 @@ export default function Roadmap() {
                             </div>
                             <div className="roadmap-title3">
                                 <div className="">To create an unbreakable bond between the project and the community, an NFT collection will be launched to offer our first believers something special that will forever testify their engagement towards the community.</div>
-                                <div>This Genesis Collection in form of cinema tickets, will offer exclusive benefits to the holders.</div>
+                                <div>This Genesis Collection in form of cinema tickets will offer exclusive benefits to the holders.</div>
                             </div>
                         </div>
                     </div>
@@ -171,7 +171,7 @@ export default function Roadmap() {
                                 <div className="roadmap-title2">PHYSICAL STUDIOS</div>
                             </div>
                             <div className="roadmap-title3">
-                                <div className="mb-4">On the longer run we plan to build our own production studios to make live action movies and explore interactive storytelling using VR for another kind of immersive experience (sounds like Metaverse!).</div>
+                                <div className="">On the longer run we plan to build our own production studios to make live action movies and explore interactive storytelling using VR for another kind of immersive experience (sounds like Metaverse!).</div>
                                 <div>The studios will welcome other production teams, adn provide advantageous access to HIVERSE NFTs Holders.</div>
                             </div>
                         </div>
