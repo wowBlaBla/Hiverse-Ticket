@@ -49,10 +49,10 @@ export default function Roadmap() {
                         </div>
                         <div className="d-flex align-items-center gap-4  flex-column flex-md-row" style={{ flex: 1 }}>
                             <div className="roadmap-title">
-                                <div className="roadmap-title1"><GlitchText duration={5000} color2="#00FFFF" color1="red">
+                                <div className="roadmap-title1 roadmap-title1-1"><GlitchText duration={5000} color2="#00FFFF" color1="red">
                                     BUILD
                                 </GlitchText></div>
-                                <div className="roadmap-title2">COMMUNITY</div>
+                                <div className="roadmap-title2 roadmap-title2-1">COMMUNITY</div>
                             </div>
                             <div className="roadmap-title3">
                                 <div className="">A disruptive concept without proper execution & excellent support is just a good idea.</div>
@@ -69,10 +69,10 @@ export default function Roadmap() {
                         </div>
                         <div className="d-flex align-items-center gap-4  flex-column flex-md-row">
                             <div className="roadmap-title">
-                                <div className="roadmap-title1"><GlitchText duration={5000} color2="#00FFFF" color1="red">
+                                <div className="roadmap-title1 roadmap-title1-2"><GlitchText duration={5000} color2="#00FFFF" color1="red">
                                     FREE MINT
                                 </GlitchText></div>
-                                <div className="roadmap-title2">HIVERSE TICKETS</div>
+                                <div className="roadmap-title2 roadmap-title2-2">HIVERSE TICKETS</div>
                             </div>
                             <div className="roadmap-title3">
                                 <div className="">To create an unbreakable bond between the project and the community, an NFT collection will be launched to offer our first believers something special that will forever testify their engagement towards the community.</div>
@@ -88,10 +88,10 @@ export default function Roadmap() {
                         </div>
                         <div className="d-flex align-items-center gap-4  flex-column flex-md-row">
                             <div className="roadmap-title">
-                                <div className="roadmap-title1"><GlitchText duration={5000} color2="#00FFFF" color1="red">
+                                <div className="roadmap-title1 roadmap-title1-3"><GlitchText duration={5000} color2="#00FFFF" color1="red">
                                     MINT
                                 </GlitchText></div>
-                                <div className="roadmap-title2">MERFOLK</div>
+                                <div className="roadmap-title2 roadmap-title2-3">MERFOLK</div>
                             </div>
                             <div className="roadmap-title3">
                                 <div className="">The first NFT Movie Collection: Merfolk, will be launched to support the funding of the first HIVERSE Movie.</div>
@@ -107,10 +107,10 @@ export default function Roadmap() {
                         </div>
                         <div className="d-flex align-items-center gap-4  flex-column flex-md-row">
                             <div className="roadmap-title">
-                                <div className="roadmap-title1"><GlitchText duration={5000} color2="#00FFFF" color1="red">
+                                <div className="roadmap-title1 roadmap-title1-4"><GlitchText duration={5000} color2="#00FFFF" color1="red">
                                     PRODUCE
                                 </GlitchText></div>
-                                <div className="roadmap-title2">HIVERSE FIRST MOVIE</div>
+                                <div className="roadmap-title2 roadmap-title2-4">HIVERSE FIRST MOVIE</div>
                             </div>
                             <div className="roadmap-title3">
                                 <div className="">We will assemble a team of qualified filmmakers to make the first episode of an 8-movie saga: THe Young Knight.</div>
@@ -126,10 +126,10 @@ export default function Roadmap() {
                         </div>
                         <div className="d-flex align-items-center gap-4  flex-column flex-md-row">
                             <div className="roadmap-title">
-                                <div className="roadmap-title1"><GlitchText duration={5000} color2="#00FFFF" color1="red">
+                                <div className="roadmap-title1 roadmap-title1-5"><GlitchText duration={5000} color2="#00FFFF" color1="red">
                                     WATCH
                                 </GlitchText></div>
-                                <div className="roadmap-title2">TO EARN</div>
+                                <div className="roadmap-title2 roadmap-title2-5">TO EARN</div>
                             </div>
                             <div className="roadmap-title3">
                                 <div className="">Upon release of each movie, holders of the NFT Movie Collection realated to the movie will be eligible to earn a share of the royalties generated by the exploitation of that movie in theaters, streaming platforms, VOD, ...</div>
@@ -145,10 +145,10 @@ export default function Roadmap() {
                         </div>
                         <div className="d-flex align-items-center gap-4  flex-column flex-md-row">
                             <div className="roadmap-title">
-                                <div className="roadmap-title1"><GlitchText duration={5000} color2="#00FFFF" color1="red">
+                                <div className="roadmap-title1 roadmap-title1-6"><GlitchText duration={5000} color2="#00FFFF" color1="red">
                                     DEVELOP
                                 </GlitchText></div>
-                                <div className="roadmap-title2">STREAMING PLATFORM</div>
+                                <div className="roadmap-title2 roadmap-title2-6">STREAMING PLATFORM</div>
                             </div>
                             <div className="roadmap-title3">
                                 <div className="">A long-term objective is to build a streaming platform to host HIVERSE and community's productions. HIVERSE NFT Collections Holders will have free access.</div>
@@ -165,10 +165,10 @@ export default function Roadmap() {
                         </div>
                         <div className="d-flex align-items-center gap-4  flex-column flex-md-row">
                             <div className="roadmap-title">
-                                <div className="roadmap-title1"><GlitchText duration={5000} color2="#00FFFF" color1="red">
+                                <div className="roadmap-title1 roadmap-title1-7"><GlitchText duration={5000} color2="#00FFFF" color1="red">
                                     CREATE
                                 </GlitchText></div>
-                                <div className="roadmap-title2">PHYSICAL STUDIOS</div>
+                                <div className="roadmap-title2 roadmap-title2-7">PHYSICAL STUDIOS</div>
                             </div>
                             <div className="roadmap-title3">
                                 <div className="">On the longer run we plan to build our own production studios to make live action movies and explore interactive storytelling using VR for another kind of immersive experience (sounds like Metaverse!).</div>

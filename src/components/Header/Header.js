@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from 'react-router-dom';
 import { CSSTransition } from "react-transition-group";
 import { Link } from 'react-scroll';
 import {
@@ -11,25 +12,24 @@ import { AiOutlineClose } from "react-icons/ai";
 
 import "./Header.css";
 
-const menu = [
-    { name: "THE VISION", href: "vision", current: false },
-    { name: "COLLECTION", href: "collection", current: false },
-    { name: "BENEFITS", href: "benefits", current: false },
-    { name: "ROADMAP", href: "roadmap", current: false },
-    { name: "TEAM", href: "team", current: false },
-];
-
-const social_link = [
-    { name: "instagram", href: "#", icon: <FaInstagram /> },
-    { name: "twitter", href: "#", icon: <FaTwitter /> },
-    { name: "discord", href: "#", icon: <FaDiscord /> },
-];
-
 export default function Header() {
     const [isNavVisible, setNavVisibility] = useState(false);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
     const [account, setAccount] = useState();
+    const { pathname } = useLocation();
+    const menu = pathname === "/mint" ? [] : [
+        { name: "THE VISION", href: "vision", current: false },
+        { name: "COLLECTION", href: "collection", current: false },
+        { name: "BENEFITS", href: "benefits", current: false },
+        { name: "ROADMAP", href: "roadmap", current: false },
+        { name: "TEAM", href: "team", current: false },
+    ];
 
+    const social_link = [
+        { name: "instagram", href: "#", icon: <FaInstagram /> },
+        { name: "twitter", href: "#", icon: <FaTwitter /> },
+        { name: "discord", href: "#", icon: <FaDiscord /> },
+    ];
     useEffect(() => {
         const mediaQuery = window.matchMedia("(max-width: 920px)");
         mediaQuery.addListener(handleMediaQueryChange);
@@ -63,8 +63,8 @@ export default function Header() {
     return (
         <header className="Header align-items-center fixed-top">
             <a href="/"
-                spy={true}
-                smooth={true}
+                // spy={true}
+                // smooth={true}
                 duration={50}><img src={require("../../assets/logo.png")} className="Logo" alt="logo" /></a>
             <CSSTransition
                 in={!isSmallScreen || isNavVisible}

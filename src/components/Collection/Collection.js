@@ -2,10 +2,10 @@ import React from "react";
 import ReactPlayer from 'react-player';
 import LazyLoad from 'react-lazyload';
 import GlitchText from 'react-glitch-effect/core/GlitchText';
-import Ticket_Normal from "../../assets/Ticket_Normal.m4v";
-import Ticket_Premiere from "../../assets/Ticket_Premiere.m4v";
-import Ticket_Avant from "../../assets/Ticket_Avant-premiere.m4v";
-import Ticket_Coulisses from "../../assets/Ticket_Coulisses.m4v";
+import Ticket_Normal from "../../assets/Ticket_Normal.mp4";
+import Ticket_Premiere from "../../assets/Ticket_Premiere.mp4";
+import Ticket_Avant from "../../assets/Ticket_Avant-Premiere.mp4";
+import Ticket_Coulisses from "../../assets/Ticket_Coulisses.mp4";
 export default function Collection() {
 
     return (

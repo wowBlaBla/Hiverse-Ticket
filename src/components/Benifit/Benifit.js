@@ -2,7 +2,7 @@ import React from "react";
 import ReactPlayer from 'react-player';
 import GlitchText from 'react-glitch-effect/core/GlitchText';
 import LazyLoad from 'react-lazyload';
-import Ticket_Normal from "../../assets/Ticket_Normal.m4v";
+import Ticket_Normal from "../../assets/Ticket_Normal.mp4";
 import check from "../../assets/check.png"
 export default function Benifit() {
 
