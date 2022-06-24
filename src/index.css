@@ -21,6 +21,16 @@
   font-family: "futur";
   src: local("futur"), url(/src/assets/font/futur.ttf) format("truetype");
 }
+@font-face {
+  font-family: "futur heavy";
+  src: local("futur heavy"),
+    url(/src/assets/font/Futura\ Heavy\ font.ttf) format("truetype");
+}
+@font-face {
+  font-family: "futur medium";
+  src: local("futur medium"),
+    url(/src/assets/font/futura\ medium\ bt.ttf) format("truetype");
+}
 body {
   margin: 0;
   font-family: "Myriad Pro" !important;
@@ -36,7 +46,7 @@ section {
   font-family: impact;
 }
 .link-class span {
-  background-color: white;
+  /* background-color: white; */
   padding: 0.2rem 2rem;
   border-radius: 2rem;
   font-weight: 900;
@@ -45,8 +55,6 @@ section {
   text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
   animation: move linear 2000ms infinite;
 }
-
-
 
 @keyframes move {
   0% {
@@ -106,7 +114,12 @@ section {
 }
 .home-mint {
   font-size: 6rem;
-  font-family: "Myriad Pro Bold";
+  font-family: "impact";
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  animation: move linear 2000ms infinite;
+}
+.home-react-player {
+  transform: scale(1.3);
 }
 .home-mint div {
   display: inline-block;
@@ -118,7 +131,7 @@ section {
 
 .collection-title1 {
   font-size: 4rem;
-  font-family: "Myriad Pro Bold";
+  font-family: "impact";
 }
 .collection-title1 div {
   display: inline-block;
@@ -126,10 +139,12 @@ section {
 .collection-title2 {
   font-size: 3rem;
 }
-
+.ticket-number {
+  font-family: "impact";
+}
 .benefits-title1 {
   font-size: 3rem;
-  font-family: "Myriad Pro Bold";
+  font-family: "impact";
 }
 .benefits-title1 div {
   display: inline-block;
@@ -144,8 +159,12 @@ section {
   display: flex;
   align-items: center;
 }
+.benefits-title3 img {
+  margin-top: -5px;
+}
 .vision-title {
-  font-size: 4em;
+  font-size: 4rem;
+  font-family: "impact";
 }
 .roadmap-all {
   font-size: 5rem;
@@ -155,13 +174,32 @@ section {
 }
 .roadmapp-title {
   font-size: 4rem;
+  font-family: "impact";
 }
 .number {
   padding: 20px;
 }
 .roadmap-title1 {
   font-size: 3rem;
-  font-family: "Myriad Pro Bold";
+  font-family: "impact";
+}
+.roadmap-title1-1 span {
+  letter-spacing: 4px;
+}
+.roadmap-title2-2 {
+  letter-spacing: 2px;
+}
+.roadmap-title1-4 span {
+  letter-spacing: 5px;
+}
+.roadmap-title2-5 {
+  letter-spacing: 8px;
+}
+.roadmap-title1-6 span {
+  letter-spacing: 11px;
+}
+.roadmap-title1-7 span {
+  letter-spacing: 9px;
 }
 .roadmap-title2 {
   font-size: 2rem;
@@ -174,7 +212,7 @@ section {
 .roadmap-title3 {
   font-size: 1.5rem;
   flex: 4;
-  font-family: futur;
+  /* font-family: "futur medium"; */
 }
 #team img {
   width: 100%;
@@ -196,6 +234,43 @@ section {
   .collection-title1 {
     font-size: 3rem;
   }
+  .home-title1 {
+    font-size: 4rem;
+  }
+  .home-title2 {
+    font-size: 2.2rem;
+  }
+  .home-title3 {
+    font-size: 3rem;
+  }
+  .home-mint {
+    font-size: 4rem;
+  }
+  section {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  .vision-title {
+    font-size: 3rem;
+  }
+  .mb-5 {
+    margin-bottom: 1rem !important;
+  }
+  .mt-5 {
+    margin-top: 1rem !important;
+  }
+  .link-class {
+    font-size: 2rem;
+  }
+  .collection-title2 {
+    font-size: 2rem;
+  }
+  .roadmapp-title {
+    font-size: 3rem;
+  }
+  .home-react-player {
+    transform: scale(1);
+  }
 }
 .item {
   padding: 20px;
@@ -204,5 +279,24 @@ section {
   color: white;
 }
 #vision .content {
-  font-family: futur;
+  /* font-family: futur; */
+}
+.benefits-title3 img {
+  margin-right: 0.8rem;
+}
+.mint-button span {
+  border: 1px solid white;
+  padding: 0rem 2rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.mint-modal {
+  border-radius: 5px;
+  /* color: black; */
+  background-color: #0000007d !important;
+  border: 10px double white !important;
+  opacity: 0.8;
+}
+.react-responsive-modal-closeButton {
+  opacity: 0;
 }

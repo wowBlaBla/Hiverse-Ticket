@@ -1,13 +1,10 @@
-import { BrowserRouter } from 'react-router-dom';
+
+
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
-import HomeScreen from './components/HomeScreen/HomeScreen'
-import Vision from './components/Vision/Vision'
-import Collection from './components/Collection/Collection'
-import Benifit from './components/Benifit/Benifit'
-import Roadmap from './components/Roadmap/Roadmap'
-import Team from './components/Team/Team'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import Landingpage from './components/Landingpage/Landingpage';
+import Mint from './components/Mint/Mint'
 import { ParallaxProvider } from "react-scroll-parallax";
 
 function App() {
@@ -17,12 +14,11 @@ function App() {
         <BrowserRouter>
           <Header />
           <div className='container'>
-            <HomeScreen></HomeScreen>
-            <Vision></Vision>
-            <Collection></Collection>
-            <Benifit></Benifit>
-            <Roadmap></Roadmap>
-            <Team></Team>
+            <Routes>
+              <Route path="/" element={<Landingpage />} />
+              <Route path="mint" element={<Mint />} />
+              <Route path="*" element={<Navigate to="/" />} />
+            </Routes>
           </div>
           <Footer />
         </BrowserRouter>
