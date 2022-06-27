@@ -1,11 +1,10 @@
 import React from "react";
 import ReactPlayer from 'react-player';
 import GlitchText from 'react-glitch-effect/core/GlitchText';
-import Ticket_Normal from "../../assets/Ticket_Normal.mp4";
+import Ticket_Normal from "../../assets/total.mp4";
 import LazyLoad from 'react-lazyload';
 
 export default function Vision() {
-
     return (
         <section id="vision">
             <div className="vision-title">

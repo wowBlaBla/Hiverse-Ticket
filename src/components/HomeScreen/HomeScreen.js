@@ -1,7 +1,7 @@
 import React from "react";
 import ReactPlayer from 'react-player';
 import GlitchText from 'react-glitch-effect/core/GlitchText';
-import Ticket_Normal from "../../assets/Ticket_Normal.mp4";
+import Ticket_Normal from "../../assets/total.mp4";
 import { useNavigate } from 'react-router-dom';
 export default function HomeScreen() {
     const navigate = useNavigate();
@@ -24,11 +24,11 @@ export default function HomeScreen() {
                     </div>
                     <div className="home-title2">Join the Revolution</div>
                     <div className="home-title3">LAUNCH DATE TBA</div>
+
                     <div className="home-mint">
                         <span onClick={mintHandle} style={{ cursor: "pointer" }}>
-                            {/* <GlitchText duration={5000} color2="#00FFFF" color1="red"> */}
-                                FREE MINT
-                            {/* </GlitchText> */}
+                            <span style={{ color: "#00FFFF" }}>FREE </span>
+                            <span style={{ color: "red" }}>MINT</span>
                         </span>
                     </div>
                 </div>

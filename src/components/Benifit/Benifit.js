@@ -2,7 +2,7 @@ import React from "react";
 import ReactPlayer from 'react-player';
 import GlitchText from 'react-glitch-effect/core/GlitchText';
 import LazyLoad from 'react-lazyload';
-import Ticket_Normal from "../../assets/Ticket_Normal.mp4";
+import Ticket_Normal from "../../assets/total.mp4";
 import check from "../../assets/check.png"
 export default function Benifit() {
 
@@ -24,14 +24,19 @@ export default function Benifit() {
                     </div>
                     <div className="benefits-title2 mt-4 mb-4">Join the Family & enjoy exclusive advantages</div>
                     <div className="benefits-title3 fs-2">
-                        <p><img src={check} alt="" width={40}></img>1xFREE CLAIM on all HIVERSE NFT Collections.</p>
-                        <p><img src={check} alt="" width={40}></img>Guaranteed presale spot on all HIVERSE NFT Collections.</p>
-                        <p><img src={check} alt="" width={40}></img>Discounted mint price on all HIVERSE NFT COLLECTIONS.</p>
-                        <p><img src={check} alt="" width={40}></img>Special Thanks Credit on all HIVERSE productions.</p>
-                        <p><img src={check} alt="" width={40}></img>Invitations to physical events (shooting, festivals, ...).</p>
-                        <p><img src={check} alt="" width={40}></img>Free access to HIVERSE streaming platform.</p>
-                        <p><img src={check} alt="" width={40}></img>Priority access to HIVERSE studios and shooting material.</p>
-                        <p><img src={check} alt="" width={40}></img>Watch To Earn</p>
+                        <p><img src={check} alt="" width={40}  ></img>1xFREE CLAIM on all HIVERSE NFT Collections</p>
+                        <p><img src={check} alt="" width={40}  ></img>Guaranteed presale spot on all HIVERSE NFT Collections</p>
+                        <p><img src={check} alt="" width={40}  ></img>Discounted mint price on all HIVERSE NFT Collections</p>
+                        <p><img src={check} alt="" width={40}  ></img>Special Thanks Credit on all HIVERSE productions</p>
+                        <p><img src={check} alt="" width={40}  ></img>Invitations to physical events (shooting, festivals, ...)</p>
+                        <p><img src={check} alt="" width={40}  ></img>Free access to HIVERSE streaming platform</p>
+                        <p><img src={check} alt="" width={40}  ></img>Priority access to HIVERSE studios and shooting material</p>
+                        <p>
+                            <img src={check} alt="" width={40}  />
+                            <span>
+                                Watch To Earn: Increase royalties generated on all HIVERSE NFT Collections
+                            </span>
+                        </p>
                     </div>
                 </div>
             </div>
