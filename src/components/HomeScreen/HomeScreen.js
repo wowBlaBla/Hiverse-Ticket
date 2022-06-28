@@ -10,7 +10,7 @@ export default function HomeScreen() {
     }
     return (
         <section id="home">
-            <div className="content d-flex mt-5 mb-5 gap-5 align-items-center flex-column flex-md-row">
+            <div className="content d-flex mt-5 mb-5 gap-5 align-items-center flex-column flex-md-row flex-column-reverse flex-md-row">
                 <ReactPlayer playing={true} muted={true} loop={true} className='react-player home-react-player' url={Ticket_Normal} />
                 {/* <video width="320" height="240" controls loop autoplay muted>
                     <source src={Ticket_Normal} type="video/mp4" />

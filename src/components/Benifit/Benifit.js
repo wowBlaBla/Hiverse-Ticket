@@ -8,7 +8,7 @@ export default function Benifit() {
 
     return (
         <section id="benefits">
-            <div className="content d-flex mt-5 mb-5 gap-5 align-items-center  flex-column flex-md-row">
+            <div className="content d-flex mt-5 mb-5 gap-5 align-items-center  flex-column-reverse flex-md-row">
                 <div className="d-flex flex-column text-center" style={{ flex: 0.5 }}>
                     <LazyLoad height={500}>
                         <ReactPlayer playing={true} muted={true} loop={true} className='react-player' url={Ticket_Normal} />
