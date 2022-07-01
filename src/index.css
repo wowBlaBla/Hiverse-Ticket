@@ -41,6 +41,7 @@ section {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+
 .link-class {
   font-size: 3rem;
   font-family: impact;
@@ -270,6 +271,12 @@ section {
   }
   .home-react-player {
     transform: scale(1);
+  }
+  #home, #collection{
+    padding-top: 100px;
+  }
+  .mint-button span {
+    padding-top: 10px!important;
   }
 }
 .item {
