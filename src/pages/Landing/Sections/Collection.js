@@ -20,8 +20,7 @@ export default function Collection() {
 				<div className="collection-title1"><GlitchText duration={5000} color2="#00FFFF" color1="red">
 					HIVERSE TICKETS
 				</GlitchText> GENESIS COLLECTION</div>
-				<div className="collection-title2">A 3D collection of 30XX Tickets giving membership access</div><div className="collection-title2"> to HIVERSE and exclusive benefits.</div>
-				{/* <div className="link-class"><span>JOIN DISCORD</span></div> */}
+				<div className="collection-title2">A 3D collection of 3000 Tickets giving membership access</div><div className="collection-title2"> to HIVERSE and exclusive benefits.</div>
 				<div className="text-center mint-button mt-3" onClick={mintHandle}>
 					<GlitchText duration={5000} color2="#00FFFF" color1="red">
 						MINT
@@ -55,7 +54,7 @@ export default function Collection() {
 						<ReactPlayer config={{ file: { attributes: { playsInline: true } } }} style={{ maxWidth: "100%" }} playing={true} muted={true} loop={true} className='react-player' url={Ticket_Avant} />
 					</LazyLoad>
 					<div className="text-center video-title">
-						<div className="ticket-number">1500</div>
+						<div className="ticket-number">500</div>
 						<div>TICKET AVANT-PREMIERE</div>
 					</div>
 				</div>

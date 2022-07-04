@@ -2,6 +2,8 @@ import React from "react";
 import ReactPlayer from 'react-player';
 import GlitchText from 'react-glitch-effect/core/GlitchText';
 import LazyLoad from 'react-lazyload';
+import { Link } from "react-router-dom";
+import { JoinDiscord } from "../../../components/JoinDiscord/JoinDiscord";
 import Ticket_Total from "../../../assets/videos/total.mp4";
 import check from "../../../assets/images/check.png"
 export default function Benefit() {
@@ -14,7 +16,9 @@ export default function Benefit() {
 						{/*<ReactPlayer playing={true} muted={true} loop={true} className='react-player' url={Ticket_Total} />*/}
 						<ReactPlayer config={{ file: { attributes: { playsInline: true } } }} style={{ maxWidth: "100%" }} playing={true} muted={true} loop={true} className='react-player' url={Ticket_Total} />
 					</LazyLoad>
-					<div className="link-class"><span>JOIN DISCORD</span></div>
+					<div className="link-class">
+						<JoinDiscord />
+					</div>
 				</div>
 				<div className="mt-5 mb-5" style={{ flex: 1 }}>
 					<div className="benefits-title1">
