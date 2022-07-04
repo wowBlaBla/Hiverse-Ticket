@@ -1,35 +1,35 @@
 @font-face {
   font-family: "Myriad Pro";
   src: local("Myriad Pro"),
-    url(/src/assets/font/MYRIADPRO-COND.OTF) format("truetype");
+    url(/src/assets/fonts/MYRIADPRO-COND.OTF) format("truetype");
 }
 @font-face {
   font-family: "Myriad Pro Regular";
   src: local("Myriad Pro Regular"),
-    url(/src/assets/font/MYRIADPRO-REGULAR.OTF) format("truetype");
+    url(/src/assets/fonts/MYRIADPRO-REGULAR.OTF) format("truetype");
 }
 @font-face {
   font-family: "impact";
-  src: local("impact"), url(/src/assets/font/impact.ttf) format("truetype");
+  src: local("impact"), url(/src/assets/fonts/impact.ttf) format("truetype");
 }
 @font-face {
   font-family: "Myriad Pro Bold";
   src: local("Myriad Pro Regular"),
-    url(/src/assets/font/MYRIADPRO-SEMIBOLD.OTF) format("truetype");
+    url(/src/assets/fonts/MYRIADPRO-SEMIBOLD.OTF) format("truetype");
 }
 @font-face {
   font-family: "futur";
-  src: local("futur"), url(/src/assets/font/futur.ttf) format("truetype");
+  src: local("futur"), url(/src/assets/fonts/futur.ttf) format("truetype");
 }
 @font-face {
   font-family: "futur heavy";
   src: local("futur heavy"),
-    url(/src/assets/font/Futura\ Heavy\ font.ttf) format("truetype");
+    url(/src/assets/fonts/Futura\ Heavy\ font.ttf) format("truetype");
 }
 @font-face {
   font-family: "futur medium";
   src: local("futur medium"),
-    url(/src/assets/font/futura\ medium\ bt.ttf) format("truetype");
+    url(/src/assets/fonts/futura\ medium\ bt.ttf) format("truetype");
 }
 body {
   margin: 0;
@@ -168,7 +168,7 @@ section {
 }
 .roadmap-all {
   font-size: 5rem;
-  background-image: url("./assets/film.png");
+  background-image: url("./assets/images/film.png");
   background-repeat: repeat-y;
   background-size: 100px;
 }

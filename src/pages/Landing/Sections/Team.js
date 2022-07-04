@@ -2,10 +2,10 @@ import React from "react";
 import GlitchText from 'react-glitch-effect/core/GlitchText';
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import team0 from "../../assets/team0.jpg"
-import team1 from "../../assets/team4.jpg"
-import team2 from "../../assets/team2.jpg"
-import team3 from "../../assets/team3.jpg"
+import team0 from "../../../assets/images/team0.jpg"
+import team1 from "../../../assets/images/team4.jpg"
+import team2 from "../../../assets/images/team2.jpg"
+import team3 from "../../../assets/images/team3.jpg"
 import {
     FaInstagram,
     FaTwitter,

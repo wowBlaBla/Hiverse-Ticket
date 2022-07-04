@@ -65,7 +65,7 @@ export default function Header() {
             <a href="/"
                 // spy={true}
                 // smooth={true}
-                duration={50}><img src={require("../../assets/logo.png")} className="Logo" alt="logo" /></a>
+                duration={50}><img src={require("../../assets/images/logo.png")} className="Logo" alt="logo" /></a>
             <CSSTransition
                 in={!isSmallScreen || isNavVisible}
                 timeout={350}
