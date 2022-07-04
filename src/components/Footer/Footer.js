@@ -26,7 +26,7 @@ export default function Footer() {
                     </div>
                     <div className="col-md-4 py-3">
                         <h4 className="text-center">
-                            <a href="mailto: Hiverse@gmail@gmail.com" className="white decoration-none hover-white text-decoration-none">Hiverse@gmail.com</a>
+                            {/* <a href="mailto: Hiverse@gmail@gmail.com" className="white decoration-none hover-white text-decoration-none">Hiverse@gmail.com</a> */}
                         </h4>
                     </div>
                 </div>

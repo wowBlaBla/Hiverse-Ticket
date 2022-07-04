@@ -1,17 +1,35 @@
 @font-face {
   font-family: "Myriad Pro";
   src: local("Myriad Pro"),
-    url(/src/assets/font/MYRIADPRO-COND.OTF) format("truetype");
+    url(/src/assets/fonts/MYRIADPRO-COND.OTF) format("truetype");
 }
 @font-face {
   font-family: "Myriad Pro Regular";
   src: local("Myriad Pro Regular"),
-    url(/src/assets/font/MYRIADPRO-REGULAR.OTF) format("truetype");
+    url(/src/assets/fonts/MYRIADPRO-REGULAR.OTF) format("truetype");
+}
+@font-face {
+  font-family: "impact";
+  src: local("impact"), url(/src/assets/fonts/impact.ttf) format("truetype");
 }
 @font-face {
   font-family: "Myriad Pro Bold";
   src: local("Myriad Pro Regular"),
-    url(/src/assets/font/MYRIADPRO-SEMIBOLD.OTF) format("truetype");
+    url(/src/assets/fonts/MYRIADPRO-SEMIBOLD.OTF) format("truetype");
+}
+@font-face {
+  font-family: "futur";
+  src: local("futur"), url(/src/assets/fonts/futur.ttf) format("truetype");
+}
+@font-face {
+  font-family: "futur heavy";
+  src: local("futur heavy"),
+    url(/src/assets/fonts/Futura\ Heavy\ font.ttf) format("truetype");
+}
+@font-face {
+  font-family: "futur medium";
+  src: local("futur medium"),
+    url(/src/assets/fonts/futura\ medium\ bt.ttf) format("truetype");
 }
 body {
   margin: 0;
@@ -23,14 +41,64 @@ section {
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
+
 .link-class {
   font-size: 3rem;
-  font-family: "Myriad Pro Bold";
+  font-family: impact;
+}
+.link-class span {
+  /* background-color: white; */
+  padding: 0.2rem 2rem;
+  border-radius: 2rem;
+  font-weight: 900;
+  cursor: pointer;
+  color: black;
+  text-shadow: 0 0 80px rgba(255, 255, 255, 0.5);
+  animation: move linear 2000ms infinite;
+}
+
+@keyframes move {
+  0% {
+    text-shadow: 4px -4px 0 hsla(0, 100%, 50%, 1),
+      3px -3px 0 hsla(0, 100%, 50%, 1), 2px -2px 0 hsla(0, 100%, 50%, 1),
+      1px -1px 0 hsla(0, 100%, 50%, 1), -4px 4px 0 hsla(180, 100%, 50%, 1),
+      -3px 3px 0 hsla(180, 100%, 50%, 1), -2px 2px 0 hsla(180, 100%, 50%, 1),
+      -1px 1px 0 hsla(180, 100%, 50%, 1);
+  }
+  25% {
+    text-shadow: -4px -4px 0 hsla(180, 100%, 50%, 1),
+      -3px -3px 0 hsla(180, 100%, 50%, 1), -2px -2px 0 hsla(180, 100%, 50%, 1),
+      -1px -1px 0 hsla(180, 100%, 50%, 1), 4px 4px 0 hsla(0, 100%, 50%, 1),
+      3px 3px 0 hsla(0, 100%, 50%, 1), 2px 2px 0 hsla(0, 100%, 50%, 1),
+      1px 1px 0 hsla(0, 100%, 50%, 1);
+  }
+  50% {
+    text-shadow: -4px 4px 0 hsla(0, 100%, 50%, 1),
+      -3px 3px 0 hsla(0, 100%, 50%, 1), -2px 2px 0 hsla(0, 100%, 50%, 1),
+      -1px 1px 0 hsla(0, 100%, 50%, 1), 4px -4px 0 hsla(180, 100%, 50%, 1),
+      3px -3px 0 hsla(180, 100%, 50%, 1), 2px -2px 0 hsla(180, 100%, 50%, 1),
+      1px -1px 0 hsla(180, 100%, 50%, 1);
+  }
+  75% {
+    text-shadow: 4px 4px 0 hsla(180, 100%, 50%, 1),
+      3px 3px 0 hsla(180, 100%, 50%, 1), 2px 2px 0 hsla(180, 100%, 50%, 1),
+      1px 1px 0 hsla(180, 100%, 50%, 1), -4px -4px 0 hsla(0, 100%, 50%, 1),
+      -3px -3px 0 hsla(0, 100%, 50%, 1), -2px -2px 0 hsla(0, 100%, 50%, 1),
+      -1px -1px 0 hsla(0, 100%, 50%, 1);
+  }
+  100% {
+    text-shadow: 4px -4px 0 hsla(0, 100%, 50%, 1),
+      3px -3px 0 hsla(0, 100%, 50%, 1), 2px -2px 0 hsla(0, 100%, 50%, 1),
+      1px -1px 0 hsla(0, 100%, 50%, 1), -4px 4px 0 hsla(180, 100%, 50%, 1),
+      -3px 3px 0 hsla(180, 100%, 50%, 1), -2px 2px 0 hsla(180, 100%, 50%, 1),
+      -1px 1px 0 hsla(180, 100%, 50%, 1);
+  }
 }
 .home-title1 {
   font-size: 6rem;
   font-family: "Myriad Pro Bold";
   line-height: 1.3;
+  font-family: impact;
 }
 .home-title1 div {
   display: inline-block;
@@ -46,18 +114,25 @@ section {
   /* line-height: 2; */
 }
 .home-mint {
-  font-size: 3.8rem;
-  font-family: "Myriad Pro Bold";
+  font-size: 5rem;
+  font-family: "impact";
+  text-shadow: 3px 2px 4px rgb(255 255 255 / 50%);
+  /* animation: move linear 2000ms infinite; */
+}
+.home-react-player {
+  transform: scale(1.3);
+}
+.home-mint div {
+  display: inline-block;
 }
 .video-title {
   font-size: 2rem;
   line-height: 1;
-  margin-top: -4rem;
 }
 
 .collection-title1 {
   font-size: 4rem;
-  font-family: "Myriad Pro Bold";
+  font-family: "impact";
 }
 .collection-title1 div {
   display: inline-block;
@@ -65,10 +140,12 @@ section {
 .collection-title2 {
   font-size: 3rem;
 }
-
+.ticket-number {
+  font-family: "impact";
+}
 .benefits-title1 {
   font-size: 3rem;
-  font-family: "Myriad Pro Bold";
+  font-family: "impact";
 }
 .benefits-title1 div {
   display: inline-block;
@@ -79,21 +156,51 @@ section {
 .benefits-title3 {
   font-size: 3rem;
 }
+.benefits-title3 p {
+  display: flex;
+  align-items: center;
+}
+.benefits-title3 p:last-child img {
+  /* margin-top: -3rem; */
+}
 .vision-title {
-  font-size: 4em;
+  font-size: 4rem;
+  font-family: "impact";
 }
 .roadmap-all {
   font-size: 5rem;
-  background-image: url("./assets/film.png");
+  background-image: url("./assets/images/film.png");
   background-repeat: repeat-y;
   background-size: 100px;
+}
+.roadmapp-title {
+  font-size: 4rem;
+  font-family: "impact";
 }
 .number {
   padding: 20px;
 }
 .roadmap-title1 {
   font-size: 3rem;
-  font-family: "Myriad Pro Bold";
+  font-family: "impact";
+}
+.roadmap-title1-1 span {
+  letter-spacing: 4px;
+}
+.roadmap-title2-2 {
+  letter-spacing: 2px;
+}
+.roadmap-title1-4 span {
+  letter-spacing: 5px;
+}
+.roadmap-title2-5 {
+  letter-spacing: 8px;
+}
+.roadmap-title1-6 span {
+  letter-spacing: 11px;
+}
+.roadmap-title1-7 span {
+  letter-spacing: 9px;
 }
 .roadmap-title2 {
   font-size: 2rem;
@@ -106,6 +213,7 @@ section {
 .roadmap-title3 {
   font-size: 1.5rem;
   flex: 4;
+  /* font-family: "futur medium"; */
 }
 #team img {
   width: 100%;
@@ -127,10 +235,75 @@ section {
   .collection-title1 {
     font-size: 3rem;
   }
+  .home-title1 {
+    font-size: 4rem;
+  }
+  .home-title2 {
+    font-size: 2.2rem;
+  }
+  .home-title3 {
+    font-size: 3rem;
+  }
+  .home-mint {
+    font-size: 4rem;
+  }
+  section {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  .vision-title {
+    font-size: 3rem;
+  }
+  .mb-5 {
+    margin-bottom: 1rem !important;
+  }
+  .mt-5 {
+    margin-top: 1rem !important;
+  }
+  .link-class {
+    font-size: 2rem;
+  }
+  .collection-title2 {
+    font-size: 2rem;
+  }
+  .roadmapp-title {
+    font-size: 3rem;
+  }
+  .home-react-player {
+    transform: scale(1);
+  }
+  #home, #collection{
+    padding-top: 100px;
+  }
+  .mint-button span {
+    padding-top: 10px!important;
+  }
 }
 .item {
   padding: 20px;
 }
 #footer a {
   color: white;
+}
+#vision .content {
+  /* font-family: futur; */
+}
+.benefits-title3 img {
+  margin-right: 0.8rem;
+}
+.mint-button span {
+  border: 1px solid white;
+  padding: 0rem 2rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
+.mint-modal {
+  border-radius: 5px;
+  /* color: black; */
+  background-color: #0000007d !important;
+  border: 10px double white !important;
+  opacity: 0.8;
+}
+.react-responsive-modal-closeButton {
+  opacity: 0;
 }

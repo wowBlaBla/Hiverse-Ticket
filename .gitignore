@@ -30,3 +30,8 @@ package-lock.json
 #Hardhat files
 /cache
 /artifacts
+
+#Firebase files
+/.firebase
+.firebaserc
+firebase.json
