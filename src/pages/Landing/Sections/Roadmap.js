@@ -1,10 +1,11 @@
 import React from "react";
 import { useParallax } from "react-scroll-parallax";
 import GlitchText from 'react-glitch-effect/core/GlitchText';
-import roadtitle from "../../assets/roadmap.png"
-import road1 from "../../assets/road1.png"
-import number1 from "../../assets/1.png"
-import film from "../../assets/film.png"
+import roadtitle from "../../../assets/images/roadmap.png"
+import road1 from "../../../assets/images/road1.png"
+import number1 from "../../../assets/images/1.png"
+import film from "../../../assets/images/film.png"
+
 export default function Roadmap() {
     const parallax1 = useParallax({
         translateY: ["100", "-100", "linear"],
