@@ -22,7 +22,7 @@ export default function Header() {
 		{ name: "COLLECTION", href: "collection", current: false },
 		{ name: "BENEFITS", href: "benefits", current: false },
 		{ name: "ROADMAP", href: "roadmap", current: false },
-		{ name: "TEAM", href: "team", current: false },
+		// { name: "TEAM", href: "team", current: false },
 	];
 
 	const social_link = [
