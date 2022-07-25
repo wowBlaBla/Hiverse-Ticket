@@ -14,7 +14,7 @@ export default function Landing() {
 			<Collection></Collection>
 			<Benefit></Benefit>
 			<Roadmap></Roadmap>
-			<Team></Team>
+			{/*<Team></Team>*/}
 		</>
 	);
 }

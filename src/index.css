@@ -46,6 +46,9 @@ section {
   font-size: 3rem;
   font-family: impact;
 }
+.link-class a {
+  text-decoration: none;
+}
 .link-class span {
   /* background-color: white; */
   padding: 0.2rem 2rem;
