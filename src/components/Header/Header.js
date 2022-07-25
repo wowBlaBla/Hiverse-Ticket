@@ -9,14 +9,20 @@ import {
 } from "react-icons/fa";
 import { BsJustify } from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
-
+import { ToastContainer, toast } from 'react-toastify';
+import { useDispatch } from "react-redux";
 import "./Header.css";
+import Web3 from "web3";
+import { updateProvider } from "../../store/actions";
 
 export default function Header() {
     const [isNavVisible, setNavVisibility] = useState(false);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
     const [account, setAccount] = useState();
     const { pathname } = useLocation();
+
+    const dispatch = useDispatch();
+
     const menu = pathname === "/mint" ? [] : [
         { name: "THE VISION", href: "vision", current: false },
         { name: "COLLECTION", href: "collection", current: false },
@@ -53,11 +59,21 @@ export default function Header() {
     };
 
     const connectWallet = async () => {
-
+        if(window.ethereum) {
+            const accounts = await window.ethereum.request({
+                method: "eth_requestAccounts"
+            });
+            const web3 = new Web3(window.ethereum);
+            dispatch(updateProvider(web3));
+            setAccount(accounts[0]);
+        } else {
+            toast.error("Please install Metamask!");
+        }
     };
 
     const disconnect = async () => {
-
+        dispatch(updateProvider(null));
+        setAccount("");
     };
 
     return (
@@ -107,18 +123,24 @@ export default function Header() {
                             CONNECT WALLET
                         </button>
                     ) : (
-                        <button
-                            onClick={disconnect}
-                            className=" "
-                        >
-                            DISCONNECT
-                        </button>
+                        <>
+                            <button>
+                                {account.substr(0, 6) + '...' + account.substr(-4)}
+                            </button>
+                            <button
+                                onClick={disconnect}
+                                className=" "
+                            >
+                                DISCONNECT
+                            </button>
+                        </>
                     )}
                 </nav>
             </CSSTransition>
             <button onClick={toggleNav} className="Burger">
                 {isNavVisible ? <AiOutlineClose color="#4a4e57" /> : <BsJustify color="#4a4e57" />}
             </button>
+            <ToastContainer></ToastContainer>
         </header>
     );
 }

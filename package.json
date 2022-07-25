@@ -5,8 +5,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "eject": "react-scripts eject",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,7 +16,15 @@
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.6",
     "@nomiclabs/hardhat-waffle": "^2.0.3",
-    "hardhat": "^2.9.9"
+    "assert": "^2.0.0",
+    "crypto-browserify": "^3.12.0",
+    "hardhat": "^2.9.9",
+    "https-browserify": "^1.0.0",
+    "os-browserify": "^0.3.0",
+    "react-app-rewired": "^2.2.1",
+    "stream-browserify": "^3.0.0",
+    "stream-http": "^3.2.0",
+    "url": "^0.11.0"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -30,6 +38,7 @@
     "react-lazyload": "^3.2.0",
     "react-multi-carousel": "^2.8.1",
     "react-player": "^2.10.1",
+    "react-redux": "^8.0.2",
     "react-responsive-carousel": "^3.2.23",
     "react-responsive-modal": "^6.2.0",
     "react-router-dom": "^6.3.0",
@@ -38,7 +47,10 @@
     "react-scroll-parallax": "^3.2.0",
     "react-toastify": "^9.0.5",
     "react-transition-group": "^4.4.2",
-    "web-vitals": "^2.1.4"
+    "redux": "^4.2.0",
+    "redux-thunk": "^2.4.1",
+    "web-vitals": "^2.1.4",
+    "web3": "^1.7.4"
   },
   "eslintConfig": {
     "extends": [
