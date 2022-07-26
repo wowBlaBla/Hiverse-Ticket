@@ -3,6 +3,7 @@ import ReactPlayer from 'react-player';
 import LazyLoad from 'react-lazyload';
 import GlitchText from 'react-glitch-effect/core/GlitchText';
 import { Modal } from 'react-responsive-modal';
+import { JoinDiscord } from '../../components/JoinDiscord/JoinDiscord';
 import { ToastContainer, toast } from 'react-toastify';
 import { useSelector } from "react-redux";
 import Web3 from "web3";

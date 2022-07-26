@@ -68,6 +68,10 @@ export default function Header() {
       }
   };
 
+  const toggleNav = () => {
+      setNavVisibility(!isNavVisible);
+  };
+
   const disconnect = async () => {
       dispatch(updateProvider(null));
       setAccount("");
