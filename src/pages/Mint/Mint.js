@@ -20,21 +20,32 @@ export default function Mint() {
 	const [open, setOpen] = useState(false);
 	const [mintCount, setMintCount] = useState(1);
 	const [mintType, setMintType] = useState(0);
-	const contractAddress = "0xd913e7acc94d356f403ea30b837c77b64dc779fb";
+	const [ticketAmount, setTicketAmount] = useState(0);
+	const contractAddress = "0x454C8b938aA06Cf65fd67e24F9E7EC47c7250a8D";
+	const amoutnPerTickets = [150, 100, 50, 33];
+	const startId = [150, 250, 300, 333];
 
 	const provider = useSelector((state) => state.web3info.provider);
 
 	const onOpenModal = () => setOpen(true);
 
-	const onCloseModal = () => setOpen(false);
+	const onCloseModal = () => {setOpen(false); setTicketAmount(0)};
+
+	const getAmount = async (ticketType) => {
+		const web3 = new Web3(window.ethereum);
+		const contract = new web3.eth.Contract(nftContract, contractAddress);
+		const result = await contract.methods.ticketId(ticketType).call();
+		setTicketAmount(startId[ticketType] - result);
+	}
 
 	const mintHandle0 = async () => {
 		if (!provider) {
 			toast.error("You have to connect wallet firstly!");
 			return;
 		}
-		onOpenModal();
 		setMintType(0);
+		getAmount(0);
+		onOpenModal();
 		setMintCount(1);
 	}
 
@@ -43,8 +54,9 @@ export default function Mint() {
 			toast.error("You have to connect wallet firstly!");
 			return;
 		}
-		onOpenModal();
 		setMintType(1);
+		getAmount(1);
+		onOpenModal();
 		setMintCount(1);
 	}
 
@@ -53,8 +65,9 @@ export default function Mint() {
 			toast.error("You have to connect wallet firstly!");
 			return;
 		}
-		onOpenModal();
 		setMintType(2);
+		getAmount(2);
+		onOpenModal();
 		setMintCount(1);
 	}
 
@@ -63,8 +76,9 @@ export default function Mint() {
 			toast.error("You have to connect wallet firstly!");
 			return;
 		}
-		onOpenModal();
 		setMintType(3);
+		getAmount(3);
+		onOpenModal();
 		setMintCount(1);
 	}
 
@@ -180,7 +194,7 @@ export default function Mint() {
 					}} /></div>
 					<div className="p-2" onClick={() => { setMintCount(mintCount + 1) }}>+</div>
 				</div>
-				<div className="fs-1">333/333 left</div>
+				<div className="fs-1">{ticketAmount ? ticketAmount : '---'}/{amoutnPerTickets[mintType]} left</div>
 				<div className="fs-1 mint-button"><span onClick={mintTicket}>MINT</span></div>
 			</Modal>
 			{/* <ToastContainer /> */}
