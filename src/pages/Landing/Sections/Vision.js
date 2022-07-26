@@ -3,6 +3,7 @@ import ReactPlayer from 'react-player';
 import GlitchText from 'react-glitch-effect/core/GlitchText';
 import Ticket_Total from "../../../assets/videos/total.mp4";
 import LazyLoad from 'react-lazyload';
+import { JoinDiscord } from "../../../components/JoinDiscord/JoinDiscord";
 
 export default function Vision() {
 	return (
@@ -29,7 +30,9 @@ export default function Vision() {
 						{/*<ReactPlayer playing={true} muted={true} loop={true} className='react-player' url={Ticket_Total} />*/}
 						<ReactPlayer config={{ file: { attributes: { playsInline: true } } }} style={{ maxWidth: "100%" }} playing={true} muted={true} loop={true} className='react-player' url={Ticket_Total} />
 					</LazyLoad>
-					<div className="link-class"><span>JOIN DISCORD</span></div>
+					<div className="link-class">
+						<JoinDiscord />
+					</div>
 				</div>
 			</div>
 		</section>

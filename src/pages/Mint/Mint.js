@@ -102,7 +102,9 @@ export default function Mint() {
 				</GlitchText> GENESIS COLLECTION</div>
 				<div className="collection-title2">A 3D collection of 333 Tickets giving membership access</div>
 				<div className="collection-title2"> to HIVERSE and exclusive benefits.</div>
-				<div className="link-class"><span>JOIN DISCORD</span></div>
+				<div className="link-class">
+					<JoinDiscord />
+				</div>
 			</div>
 			<div className="row">
 				<div className="col-md-3">

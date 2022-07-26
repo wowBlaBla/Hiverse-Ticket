@@ -22,7 +22,6 @@ export default function HomeScreen() {
 					</div>
 					<div className="home-title2">Join the Revolution</div>
 					<div className="home-title3">LAUNCH DATE 25 July 2022</div>
-
 					<div className="home-mint">
 						<span onClick={mintHandle} style={{ cursor: "pointer" }}>
 							<span style={{ color: "#00FFFF" }}>FREE </span>

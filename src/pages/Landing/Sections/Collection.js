@@ -21,7 +21,6 @@ export default function Collection() {
 					HIVERSE TICKETS
 				</GlitchText> GENESIS COLLECTION</div>
 				<div className="collection-title2">A 3D collection of 333 Tickets giving membership access</div><div className="collection-title2"> to HIVERSE and exclusive benefits.</div>
-				{/* <div className="link-class"><span>JOIN DISCORD</span></div> */}
 				<div className="text-center mint-button mt-3" onClick={mintHandle}>
 					<GlitchText duration={5000} color2="#00FFFF" color1="red">
 						MINT
