@@ -98,15 +98,34 @@ export default function Mint() {
 		}
 		const walletAddy = result[0];
 		const contract = new web3.eth.Contract(nftContract, contractAddress);
-		await contract.methods.mintTicket(mintCount, mintType).send({
-			from: walletAddy
-		})
-		.then(data => {
-			toast.success("Minted Successfully.");
-		})
-		.catch(err => {
-			toast.error(err.message);
-		})
+		const mintStatus = await contract.methods.mintStatus().call();
+		if(mintStatus == 0) {
+			toast.error("Sale is not active yet.");
+		} else if (mintStatus == 1) {
+			await contract.methods.mintTicket(mintCount, mintType).send({
+				from: walletAddy
+			})
+			.then(data => {
+				toast.success("Minted Successfully.");
+			})
+			.catch(err => {
+				toast.error(err.message);
+			})
+		} else if (mintStatus == 2) {
+			const tokenPrice = await contract.methods._tokenPrice().call();
+			await contract.methods.mintTicket(mintCount, mintType).send({
+				from: walletAddy,
+				value: tokenPrice
+			})
+			.then(data => {
+				toast.success("Minted Successfully.");
+			})
+			.catch(err => {
+				toast.error(err.message);
+			})
+		} else {
+			toast.error("Something went Wrong!");
+		}
 	}
 
 	return (
